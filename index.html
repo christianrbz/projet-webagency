@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="utf-8" />
+		<!-- Pour le responsive -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<!-- Titre de l'onglet -->
+		<title>Web Agency</title>
+
+		<!-- Meta description -->
+		<meta name="description" content="L'agence de tous vos projets ! Vous avez un projet web ? La WebAgency vous aide à le réaliser !">
+
+		<!-- Feuille de style -->
+		<link rel="stylesheet" href="style.css">
+
+		<!-- liens pour fontawesome pour afficher les icônes -->
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">        		
+	</head>
+
+
+<body>
+
+
+	<!-- Header -->
+	<header id="header">
+
+		<div id="entete">
+
+			<!-- Logo -->	
+			<img src="images/logo.png" alt="WebAgency">
+			
+
+			<!-- Menu Burger pour mobile et tablette -->
+			<input type="checkbox" id="inputBurger">
+			<label for="inputBurger" id="burger">
+				<i class="fa fa-bars" aria-hidden="true"></i>
+			</label>
+
+			<!-- Navigation Entete -->
+			<nav>
+				<ul>
+					<li><a href="index.html"  id="bord_bleu">Accueil</a></li>
+					<li><a href="#services">Services</a></li>
+					<li><a href="#portfolio">Portfolio</a></li>
+					<li><a href="#contact">Contact</a></li>
+				</ul>
+			</nav>
+			
+						
+			
+		</div> <!-- / Entete -->
+
+
+		<!-- BANNIERE  -->
+
+		<div id="banniere">
+
+			<img src="images/bg1.jpg" alt="fille mains peintures multicolores" />
+			
+			<div id="titre_banniere">				
+				<h1><span class="titrebleu">WEBAGENCY</span> : L'AGENCE DE TOUS<br/> VOS PROJETS !</h1>
+				<p>Vous avez un projet web ? La WebAgency vous aide à le réaliser !</p>
+            <br/>
+				<a href="#">Plus d'infos</a>
+
+			</div>
+			
+			
+
+			
+            <!-- Cercle et chevron droite et gauche -->
+			<a class="demi_cercle_gauche" href="#"><i class="fa fa-chevron-left" aria-hidden="true"></i> 
+			</a>
+
+			<a class="demi_cercle_droite" href="#"><i class="fa fa-chevron-right" aria-hidden="true"></i>
+			</a>
+			
+			<!-- Barre bleu dans le bas de la banniere -->
+            <div id="barre_banniere"></div>
+
+
+		</div> <!-- Fin de Banniere -->
+
+	</header>
+
+	
+
+
+	<!-- Section NOS SERVICES -->
+
+	<section id="services"> 
+
+		<div class="titre_section">
+
+		<h2>NOS SERVICES</h2>
+
+
+		<div class="separateur">
+			<i class="fa fa-circle" aria-hidden="true"></i>
+		</div>
+
+			<p>Les différentes équipes de WebAgency vous garantissent les meilleurs services possibles dans la création de sites web !</p>
+		</div>
+
+		<div id=conteneur_services>  <!-- flexbox pour emplacement image et description côte à côte -->
+
+
+			<div id="mac"><img src="images/mac.png" alt="Ordinateur de Bureau Mac">
+			</div>
+			
+
+			 <!-- Liste de description de services avec les icones -->
+
+		 
+				<ul id="liste_services">
+					<li>
+
+						<div class="cercle_gris">
+							<i class="fa fa-line-chart" aria-hidden="true"></i>			
+							<div class="point_bleu"></div>
+							
+						</div>
+
+						<div class="details_services">
+							<h2>UX design</h2>
+							<p> L'expérience de l'utilisateur est placé au centre de la démarche de conception de votre projet afin de lui garantir un site efficace et attractif ! </p>
+						</div>
+					</li>
+
+						
+					<li>
+
+						<div class="cercle_gris">
+							<i class="fa fa-cubes" aria-hidden="true"></i>
+							<div class="point_bleu"></div>
+							
+
+						</div>
+						<div class="details_services">
+							<h2>UI design </h2>
+							<p>Nous rendons l’expérience de navigation la plus intuitive via un design fonctionnel, qui inspire confiance et qui permet à l’utilisateur d’arriver à son but. </p>
+						</div>
+					</li>
+
+					<li>
+						<div class="cercle_gris">
+						<i class="fa fa-pie-chart" aria-hidden="true"></i>
+						<div class="point_bleu"></div>
+						
+						</div>
+
+						<div class="details_services">
+							<h2>SEO</h2>
+							<p>Grâce à notre optimisation, votre projet web aura la meilleure visibilité dans les résultats des moteurs de recherches.</p>
+						</div>
+					</li>
+
+
+				</ul>
+			
+
+		</div>
+
+	</section> <!-- Fin de Section NOS SERVICES -->
+
+
+
+	<!-- Section NOS PROJETS -->
+
+	<section id="portfolio">
+
+		<div class="titre_section">
+			<h2>NOS PROJETS</h2>
+
+			<div class="separateur">
+			<i class="fa fa-circle" aria-hidden="true"></i>
+			</div>
+
+			<p>Ils nous ont fait confiance et ils ne l'ont pas regretté ! Voici quelques exemples de projets réalisés pour nos clients.</p>
+		</div>
+
+		 <!-- Menu portfolio -->
+    	<div id="menuPortfolio">
+                
+            <ul>
+            	<li id=allworks_triangle><a href="#portfolio" id="allworks_bleu">All Works</a>
+            	<i class="fa fa-caret-down" aria-hidden="true"></i>
+            	</li>
+
+            	<li><a href="#portfolio">Creative</a>
+            	<i class="fa fa-caret-down" aria-hidden="true"></i>
+        		</li>
+
+            	<li><a href="#portfolio">Corporate</a>
+            	<i class="fa fa-caret-down" aria-hidden="true"></i>
+        		</li>
+
+            	<li><a href="#portfolio">Portfolio</a>
+            	<i class="fa fa-caret-down" aria-hidden="true"></i>
+            	</li>
+            </ul>
+       	</div> 
+
+
+    		            
+        <!-- Les 8 projets : images et descriptions -->
+        <div id="projets">
+
+            	<ul>
+            		<li>
+        			 	<img src="images/portfolio/optic3000.jpg" alt="Optic 3000 - Opticien en ligne" /> 
+
+                			<!-- Légende du projet -->
+                   		 <div> 
+                          	<h3>Optic 3000</h3>
+                        	<p>Opticien en ligne</p>
+
+                        	<!-- Icone Eyes -->
+                    		<a href="#portfolio"><i class="fa fa-eye" aria-hidden="true"></i></a>
+                    	</div>                       
+            		</li>
+
+
+            		<li>
+            			<img src="images/portfolio/deguizland.jpg" alt="Deguizland - Location de déguisement" /> 
+
+            				<!-- Légende du projet -->
+                        <div>  
+                    		<h3>Deguizland</h3>
+                        	<p>Location de déguisement</p>
+                        	<!-- Icone Eyes -->
+                    		<a href="#portfolio"><i class="fa fa-eye" aria-hidden="true"></i></a>
+                    	</div> 
+                	</li>
+
+        			<li>
+                    	<img src="images/portfolio/pompadour.jpg" alt="Pompadour - Boutique en ligne de la marque de vêtements" />
+
+                    		<!-- Légende du projet -->
+                        <div>
+                        	
+                        	<h3>Pompadour</h3>
+                            <p>Boutique en ligne de la marque</p>
+                        	<!-- Icone Eyes -->
+                    		<a href="#portfolio"><i class="fa fa-eye" aria-hidden="true"></i></a>
+
+         	            </div>      
+                    		  
+               		 </li> 
+                        
+               
+                	<li>
+                    	<img src="images/portfolio/cyber_archi.jpg" alt="CyberArchi - Site sur l'architecture" /> 
+                    
+                    		<!-- Légende du projet -->
+                        <div> 
+                            
+                            <h3>CyberArchi</h3>
+                            <p>Site sur l'architecture</p>
+                            <!-- Icone Eyes -->
+                    		<a href="#portfolio"><i class="fa fa-eye" aria-hidden="true"></i></a>
+                        </div>
+	          		 </li>
+
+
+               		 <li>
+                    	<img src="images/portfolio/shopping_web.jpg" alt="Shopping Web - Boutique en ligne de vêtements" /> 
+                    		<!-- Légende du projet -->
+                        <div>
+                                               
+                            <h3>Shopping Web</h3>
+                            <p>Boutique en ligne de vêtements</p>
+                            <!-- Icone Eyes -->
+                    		<a href="#portfolio"><i class="fa fa-eye" aria-hidden="true"></i></a>
+                        </div> 
+               		 </li>
+
+        
+        		
+                	<li>
+                   	 <img src="images/portfolio/into_the_world.jpg" alt="Into the World - Agence de voyage" /> 
+                    
+                		<!-- Légende du projet -->
+                    <div> 
+                        
+                        <h3>Into the World</h3>
+                        <p>Agence de voyage</p>
+                        <!-- Icone Eyes -->
+                		<a href="#portfolio"><i class="fa fa-eye" aria-hidden="true"></i></a>	
+                    </div> 
+                    
+
+                </li>
+
+                
+                <li>
+                    <img src="images/portfolio/tatto_ink.jpg" alt="Tatto Ink - Tatoueur professionnel" /> 
+
+                    	<!-- Légende du projet -->
+                    <div> 
+                        
+                        <h3>Tatto Ink</h3>
+                        <p>Tatoueur Professionnel</p>
+                        <!-- Icone Eyes -->
+                		<a href="#portfolio"><i class="fa fa-eye" aria-hidden="true"></i></a>
+                    </div> 
+                    
+
+                </li>
+            
+				           
+                <li>
+                    <img src="images/portfolio/top_office.jpg" alt="Top Office - Fourniture pour la bureautique" /> 
+
+                   		 <!-- Légende du projet -->
+                    <div> 
+                    	
+	                    <h3>Top Office</h3>
+                        <p>Fourniture pour la bureautique</p>
+                        <!-- Icone Eyes -->
+            			<a href="#portfolio"><i class="fa fa-eye" aria-hidden="true"></i></a>
+                    </div> 
+            	</li>
+           	</ul>
+
+    	</div> <!-- Fin div projets -->
+	</section>  <!-- / Section NOS PROJETS -->
+
+
+
+	<!-- FOOTER -->
+
+	<footer id="contact">
+		
+       	<!-- Cadre des coordonnées -->
+        <div id="formulaireContact">
+                    
+            <h2>Contact Info</h2>
+                    
+                <!-- Coordonnées -->
+        	<p>
+        	<span>WebAgency SAS</span><br />
+            25 Rue d'Hauteville 75010 Paris<br />
+            <span id="telephone">Tel :</span> 01 02 03 04 05
+            </p>
+                    
+	                <!-- Formulaire de contact -->
+	        <form method="post" action="index.html">
+	                    
+	            <p>
+	        		<!-- Nom -->
+	            	<input type="text" name="name" id="name" placeholder="Name" required /> 
+	            </p>
+
+	            <p>
+	            	<!-- Email -->
+	                <input type="email" name="email" id="email" placeholder="Email" required /> 
+	            </p> 
+
+	            <p>
+	            	<!-- Sujet -->
+	                <input type="text" name="subject" id="subject" placeholder="Subject" required /> 
+	            </p>
+
+	            <p>
+	            	<!-- Message -->
+	                <textarea name="message" id="message" placeholder="Message" rows=7 required ></textarea> 
+	            </p>
+
+	            <p>
+	            	<!-- Bouton d'envoi -->
+	                <a href="#contact">Send Message</a>
+	            </p>
+	                
+        	</form> <!-- fin formulaire de contact -->
+                    
+	 	</div> <!-- Fin du Cadre coordonnées -->
+
+        <!-- Carte Google Maps -->
+        <div id="map">
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3120.724090431948!2d2.346538725678114!3d48.87335507829088!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e145ccb3091%3A0x9495beee8c96ec27!2s25%20Rue%20d&#39;Hauteville%2C%2075010%20Paris!5e0!3m2!1sfr!2sfr!4v1571214331517!5m2!1sfr!2sfr" allowfullscreen=""></iframe>
+    	</div>
+
+    	<div id="filtrebleu"></div>
+
+	</footer>
+
+</body>
+</html>
