@@ -1,0 +1,981 @@
+/* Police : 3 polices differentes */
+
+@font-face {
+    font-family: 'robotobold';
+    src: url('fonts/roboto_bold/Roboto-Bold-webfont.eot');
+    src: url('fonts/roboto_bold/Roboto-Bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/roboto_bold/Roboto-Bold-webfont.woff') format('woff'),
+         url('fonts/roboto_bold/Roboto-Bold-webfont.ttf') format('truetype'),
+         url('fonts/roboto_bold/Roboto-Bold-webfont.svg#robotobold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'robotoregular';
+    src: url('fonts/roboto_regular/Roboto-Regular-webfont.eot');
+    src: url('fonts/roboto_regular/Roboto-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+	     url('fonts/roboto_regular/Roboto-Regular-webfont.woff') format('woff'),
+         url('fonts/roboto_regular/Roboto-Regular-webfont.ttf') format('truetype'),
+         url('fonts/roboto_regular/Roboto-Regular-webfont.svg#robotoregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'robotoblack';
+    src: url('fonts/roboto_black/Roboto-Black-webfont.eot');
+    src: url('fonts/roboto_black/Roboto-Black-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/roboto_black/Roboto-Black-webfont.woff') format('woff'),
+         url('fonts/roboto_black/Roboto-Black-webfont.ttf') format('truetype'),
+         url('fonts/roboto_black/Roboto-Black-webfont.svg#robotoblack') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+html {
+	padding: 0;
+	margin: 0;
+}
+
+/* BODY */
+body {
+	margin: 0;
+	padding: 0;
+	background-color: #FFF;  /* Fond couleur blanc */
+	font-family: robotoregular, Arial, sans-serif;
+	width: 100%;
+}
+
+
+/*----- Proprietes generales ----- */
+
+img {
+	max-width: 100%;
+}
+
+
+header {
+	display: flex; /* aligne le contenu de la section horizontalement */
+	justify-content: center;
+}
+
+
+
+ul {
+	list-style-type: none; /* supprime les puces */
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+h1, h2 {
+	font-family: robotoblack, Arial, sans-serif; 
+}
+
+
+
+/* ---- HEADER : Logo et menu de navigation ---- */
+
+
+#entete {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;    
+	height: 80px; /* Hauteur de l'entete */
+	background-color: #FFF;
+	display: flex; 
+	justify-content: space-around; /* met une espace de chaque cote */
+	align-items: center;  /* centre les elements verticalement */
+ 	z-index: 99;  /*menu reste dans le contenu*/
+}
+
+/* Icone du menu Burger en tablette et mobile */
+#entete i {
+	display: none;
+	font-size: 1.5em;
+}
+
+#inputBurger {
+	display: none;
+	}
+
+/* ---- Navigation de l'entete ---- */
+
+
+nav ul {
+    display: flex;
+}
+
+nav li a {
+	padding: 20px; /* Marge des liens */
+	color: #5c5c5c;  /* couleur gris */
+}
+
+nav #bord_bleu {
+	border-top: 2px solid #5CADD3;   /* couleur bleu */
+}
+
+
+nav ul li a:hover {  
+	border-top: 2px solid #5CADD3;
+	color: black;
+}
+
+
+
+/* ---- BANNIERE ---- */
+
+#banniere {
+	position: relative;
+	padding-top: 80px;
+	margin-bottom: 45px;
+}
+
+#banniere img {
+	width: 100%;
+}
+
+
+/* Titre de la banniere dans l'image */
+#titre_banniere {
+	position: absolute;
+	left: 120px;
+    height: 33%;
+	top: 200px;
+	text-align: left;
+	color: #fff;
+}
+
+#titre_banniere h1 {
+	font-size: 2em;
+	margin: 0;
+}
+
+#titre_banniere p {
+	padding-bottom: 10px;
+	padding-top: 10px;
+}
+
+.titrebleu {
+	color: #5CADD3;
+}
+
+#titre_banniere a {
+
+	padding: 10px 20px;
+	background-color: #5CADD3;
+	color: #fff;
+	border-radius: 3px;
+	font-family: robotobold, Arial, sans-serif;
+	box-shadow: 0 2px 2px #4494BB;
+}
+
+#titre_banniere a:hover {
+	background: #0088b5;
+}
+
+
+/* Les demi-cercles avec chevrons */
+
+.fa-chevron-left {
+	position: absolute;
+	top: 42%;
+	left: 7px;
+	color: white;
+}
+
+
+.fa-chevron-right {
+	position: absolute;
+	top: 42%;
+	right: 7px;
+	color: white;
+}  
+
+.demi_cercle_gauche {
+	position: absolute;
+	top: 50%;
+	left: 0;
+	background-color: rgba(0,0,0,0.2);
+	border-bottom-right-radius: 70px;
+	border-top-right-radius: 70px;
+  	width: 35px;
+  	height: 70px;
+ }
+
+.demi_cercle_droite {
+	position: absolute;
+	top: 50%;
+	right: 0;
+	background-color: rgba(0,0,0,0.2);
+	border-bottom-left-radius: 70px;
+	border-top-left-radius: 70px;
+  	width: 35px;
+  	height: 70px;
+ } 
+
+.demi_cercle_gauche:hover {
+ 	background-color: #5CADD3;
+}
+
+
+.demi_cercle_droite:hover {
+	background-color: #5CADD3;
+}
+ 
+/* Barre bleu en dessous de la banniere */
+
+ #barre_banniere {
+ 	position: absolute;
+ 	bottom: 5px;
+ 	left: 0;
+   	height: 5px;
+   	width: 10%;
+   	background-color: #5CADD3;
+}
+
+
+
+
+/* ---- SERVICES ---- */
+
+#services {
+	padding: 80px 140px 30px 140px;
+    margin-top: -80px;
+}
+
+
+.titre_section {
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+.titre_section h2 {
+	margin: 0;
+}
+
+.titre_section h2 {
+	font-size: 2.5em;
+}
+
+
+
+/* Separateur */		
+
+  
+.separateur {
+	position: relative;
+	text-align: center;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+/* rond bleu */
+.separateur i {
+	border: 2px solid #FFF;
+	color: #5CADD3;
+}
+
+/* 2 barres autour du rond bleu */
+.separateur:before, .separateur:after {
+	position: absolute;
+	bottom: 50%;
+	content: "";
+	width: 10%;
+	height: 1px;
+	background: #EBEBEB;
+}
+
+.separateur:before {
+	left: 38%;  
+}
+
+.separateur:after {
+	right: 38%;
+}
+
+/* Icones avec cercle gris */
+
+.cercle_gris {
+	position: absolute;
+	top: 7%;
+}
+
+/* icone avec le cercle gris en bordure */
+.cercle_gris i {
+	color:#5CADD3 ;
+	border: 1px solid #EBEBEB;
+	border-radius: 50%;
+	padding: 20px 20px;
+	font-size: 1.5rem;
+}
+
+/* rond bleu avec bordure en rond de couleur blanc */
+.point_bleu {
+	position: absolute;
+	background-color: #FFF;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    border: 3px solid #FFF;
+    background: #5CADD3;
+    right: -7px;
+    top: 35%;
+}
+
+/* Pour separer l'image et la liste des services */
+#conteneur_services {   
+	display: flex;
+	justify-content: center;
+}
+
+#mac {
+	min-width: 460px;
+	margin-left: -7%;
+}
+
+#liste_services {
+	padding-top: 60px; 
+	margin: 0;
+	padding-left: 0;
+	width: 700px;
+
+}
+
+#liste_services li {
+	position: relative;
+	padding-bottom: 10px;
+}
+
+.details_services h2, p {
+	margin:0;
+}
+
+.details_services h2 {
+	font-family: robotobold, Arial, sans-serif;
+	font-size: 1.5rem;
+}
+
+
+.details_services {
+	text-align: left;
+	margin-left: 100px;
+}
+
+
+
+/* ---- NOS PROJETS ---- */
+
+#portfolio {
+	padding-top: 80px;
+	background-color: #F5F5F5;
+	padding-bottom: 20px;
+}
+
+
+/* Menu des projets */
+#menuPortfolio ul {
+	margin: 0;
+	display: flex;
+	justify-content: center;
+	padding-top: 20px;
+	padding-bottom: 50px;
+}
+
+/* Pour que les spécifites de AllWorks soit toujours apparantes */
+#menuPortfolio #allworks_bleu  {
+	background-color: #5CADD3;
+	color: #FFF;
+	
+	border-bottom: 3px solid #468CAD;
+	
+}
+
+#menuPortfolio li a {
+	padding: 20px;
+	background-color: #E5E5E5;
+	color: #5c5c5c;
+	
+	border-bottom: 3px solid #E5E5E5;
+}
+
+#menuPortfolio a:hover {  
+	background: #5CADD3;
+	color: #FFF;
+	border-bottom: 3px solid #468CAD;
+}
+
+
+/* Pour mettre l'icone triangle sous le menu */
+
+#menuPortfolio li {
+	position: relative;
+}
+
+.fa-caret-down {
+	position: absolute;
+	color: #468CAD;
+	bottom: -195%;
+	left: 45%;
+}
+
+#menuPortfolio i {
+	display: none;
+	font-size: 2em;
+}
+
+#menuPortfolio li:hover .fa-caret-down {
+	display: block;
+}
+
+
+/* Pour toujours afficher le triangle de AllWork */
+#allworks_triangle i {
+	position: absolute;
+	color: #468CAD;
+	bottom: -195%;
+	left: 45%;
+	display: block;
+}
+
+
+/* -- Les 8 images representant les projets -- */
+
+
+#projets ul {
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	justify-content: center;
+	
+}
+
+#projets li {
+	width: 22%;
+	margin-right: 10px;
+	margin-left: 10px;
+	margin-bottom: 20px;
+}
+
+/* Pour la description des images */
+
+#projets h3 {
+	margin: 0;
+	padding-bottom: 5px;
+}
+
+#projets div {
+	background-color: rgba(0, 0, 0, 0.5);
+	color: white;
+	font-family: robotoregular, Arial, sans-serif;
+	position: relative;
+	font-size: 0.9em;
+	padding: 2%;
+}
+
+#projets i {
+	position: absolute;
+	right: 5%;
+	top: -20%;
+	color: white;
+	background-color: #468CAD;
+	border: 1px solid #EBEBEB;
+	border-radius: 50%;
+	padding: 10px 10px;
+	font-size: 0.8em;
+}
+
+/* Pour apparaitre la description en hover */
+
+#projets li {
+	position: relative;
+}
+
+#projets div {
+	position: absolute;
+	bottom: 4px;
+	width: 96%;
+	display: none;
+}
+
+#projets li:hover div {
+	display: block;
+}
+
+
+/* agrandir des qu'on survole l'icone eye */
+
+#projets i:hover { 
+	background-color: #5CADD3;
+	font-size: 1.5em;
+}
+
+
+
+
+/* ---- FOOTER Map et Formulaire ---- */
+
+#contact {
+	position: relative;
+	width: 100%;
+	height: 500px;
+	margin-top: -80px;
+	padding-top: 80px;
+	z-index: 0;
+}
+
+#filtrebleu {
+	background-color: #5CADD3;
+	z-index: 1;
+	width: 100%;
+	height: 500px;
+}
+
+#map iframe {
+	position: absolute; 
+	width: 100%;
+	height: 500px;
+	border: 0;
+	z-index: 2;
+	opacity: 0.6;
+}
+
+
+
+#formulaireContact {
+	position: absolute;
+	background-color: rgba(255, 255, 255, 0.8);
+	right: 150px;
+	top: 105px; 
+	padding: 10px 20px 5px 20px;
+	width: 300px;
+	z-index: 3;
+}
+
+#telephone {
+	border-bottom: dotted;
+}
+
+#formulaireContact h2 {
+	margin-top: 0;
+	margin-bottom: 5px;
+}
+
+#formulaireContact p {
+	margin-bottom: 15px;
+	color: #5c5c5c;
+}
+
+#formulaireContact span {
+	font-weight: bold;
+}
+
+#formulaireContact a {
+    padding: 5px 10px;
+    background-color: #5CADD3;
+    color: #fff;
+    border-radius: 3px;
+    font-family: robotobold, Arial, sans-serif;
+    box-shadow: 0 2px 2px #4494BB;
+}
+
+#formulaireContact a:hover {
+	background: #0088b5;
+}
+
+#name, #email, #subject, #message {
+	border-radius: 3px;
+	border: 1px solid #CCCCCC;
+	font-family: robotoregular, Arial, sans-serif;
+}
+
+#formulaireContact input, textarea {
+	padding-left: 10px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	width: 95%;
+}
+
+
+
+
+
+
+/* ------ Responsive Desktops ------ */
+
+@media screen and (max-width: 992px) {
+
+	/* Position titre sur l'image de la banniere */
+
+	#titre_banniere {
+		top: 130px;
+		left: 40px;
+	}
+
+	/* NOS SERVICES : Mettre l'image au dessus de la liste des services */
+
+	#conteneur_services {
+		flex-wrap: wrap;
+	}
+
+	#mac {
+		display: block;
+		margin: 0;
+	}
+
+	#services img {
+		display: block;
+		margin: auto;
+	}
+
+	#liste_services {
+		padding-left: 0;
+	}
+
+	#liste_services {
+		padding-top: 20px;
+	}
+
+	#liste_services li {
+		padding-bottom: 20px;
+	}
+
+	/* CONTACT position du formulaire dans la map */
+
+	#formulaireContact {
+		right: 120px;
+			}
+
+
+}
+
+
+/* ------ Responsive tablette ------ */
+
+@media screen and (max-width: 768px) { 
+
+	#entete img {
+		height: 40px;
+	}
+
+	/* On fait disparaitre le menu nav pour le mettre ensuite en nouveau menu (menu burger) */
+	nav {
+		display: none;
+	}
+
+	/* Pour mettre le Menu Burger */ 
+
+	#entete i {
+		display: block;
+		color: #5CADD3;
+	}
+
+	#burger {
+		display: block;
+	}
+
+	#inputBurger:checked ~ nav {
+		display: block;
+		position: absolute;
+		bottom: -110px;
+		background-color: #5CADD3;
+		color: white;
+		width: 100%;
+	}
+
+	/* Configuration de la nouvelle nav du menu Burger */
+
+	nav ul {
+		flex-direction: column;
+		text-align: center;
+		padding-left: 0;
+		margin: 0;
+	}
+
+	nav ul li a:hover {
+		border-top: 0;
+		color: #468CAD;
+	}
+
+	nav li {
+		padding: 5px 0;
+		border-top: 1px solid #5c5c5c;
+	}
+
+
+	nav li a {
+		color: white;
+	}
+
+	nav #bord_bleu {
+	border-top: none;
+	}
+
+
+
+	.demi_cercle_gauche, .demi_cercle_droite {
+		display: none;
+	}
+
+	#titre_banniere {
+		top: 100px;
+		left: 30px;
+	}
+
+
+	/* NOS SERVICES */
+	
+	#services {
+		padding-right: 50px;
+		padding-left: 50px;
+	}
+
+
+	/* NOS PROJETS */
+
+	.titre_section p {
+		padding: 0 50px;
+	}
+
+	#menuPortfolio ul {
+		padding-bottom: 70px;
+	}
+
+	/* Les 8 images en 2 par ligne */
+
+	#projets i:hover { 
+		font-size: 0.8em;
+	}
+
+
+	#projets li {
+		width: 40%;
+		margin-left: 25px;
+		margin-right: 25px; 
+		margin-bottom: 40px;
+	}
+
+	/* La div description reste toujours apparante car hover inutile en tablette et mobile (ecran tactile) */
+	#projets div {
+		bottom: 5px;
+		display: block;
+	}
+
+	
+	/* CONTACT */
+
+	#formulaireContact {
+		right: 70px;
+	}
+
+}
+
+
+
+/* ------ Responsive mobile ------ */
+
+@media screen and (max-width: 576px) {
+
+
+/* position du titre en bas de l'image de la banniere */
+	#titre_banniere {
+		position: static;
+		top: 100px;
+		left: 10px;
+		font-size: 0.5em;
+		color: black;
+		text-align: center;
+		height: 170px;
+		font-size: 0.9em;
+		margin-top: 10px;
+		padding: 0 15px;
+	}
+
+	#titre_banniere h1 {
+		font-size: 1.8em;
+	}
+
+	#titre_banniere br {
+		display: none;
+	}
+	 
+	#titre_banniere p {
+		padding-bottom: 15px;
+	}
+	
+	#titre_banniere p {
+		padding: 5px 0 15px;
+	}
+
+	#titre_banniere a {
+		padding: 3px;
+	}
+
+	#barre_banniere {
+		display: none;
+	}
+
+	#banniere {
+		margin-bottom: 5px;
+	}
+
+
+	/* NOS SERVICES */
+
+	.titre_section {
+		padding: 0 25px;
+	}
+
+	.separateur {
+		display: none;
+	}
+	
+	
+	/* position des icones de la liste des services */
+	.cercle_gris {
+	 	position: relative;
+	 	text-align: center;
+	 }
+
+	 .point_bleu {
+	 	position: absolute;
+	 	left: 55%;
+	 }
+
+	
+	 .details_services {
+	 	position: static;
+	 	margin: auto;
+	 	text-align: center;
+	 	margin-top: 10px;
+	 }
+
+
+	 .details_services p {
+	 	
+	 	padding: 10px 40px 30px 40px;
+	 }
+
+	 #services {
+	 	padding-bottom: 0;
+	 	padding-left: 0;
+	 	padding-right: 0;
+	 }
+	 
+	 #liste_services {
+	 	padding-left: 0;
+	 }
+
+	 #mac {
+	 	min-width: 320px;
+	 }
+	
+
+
+	/* NOS PROJETS */
+
+	.titre_section h2 {
+	padding-bottom: 20px;
+	}
+
+	.titre_section p {
+		padding: 0;
+	}
+
+	#menuPortfolio ul {
+		margin: auto;
+		padding-left: 0;
+	}
+
+	#menuPortfolio li a {
+		padding: 7px;
+	}
+
+	#menuPortfolio i {
+	bottom: -140%;
+	}
+
+	
+
+	/* Les 8 images du projet en 1 par ligne */
+
+	#projets li {
+		width: 80%;
+		padding: 0;
+		margin-bottom: 40px;
+	}
+
+
+	/* CONTACT */
+
+	/* position formulaire au dessus de la map */
+
+	#formulaireContact {
+		position: static;
+		flex-direction: column;
+		margin: auto;
+	}
+
+	#formulaireContact h2 {
+		text-align: center;
+		margin-bottom: 10px;
+		font-size: 1.8em;
+	}
+
+	#formulaireContact p {
+		text-align: center;
+		font-size: 0.9em;
+	}
+
+	/* changement hauteur de la map */
+	#map iframe {
+		height: 350px;
+	}
+
+	#filtrebleu {
+		height: 350px;
+	}
+
+}
+	
+
+
+
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
