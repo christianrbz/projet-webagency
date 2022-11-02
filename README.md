@@ -1,4 +1,4 @@
-Intégration d’une maquette du site (une simple image) d'une agence web
+Intégration d’une maquette de site (une simple image) d'une agence web
 
 Le projet devait respecter ces consignes : 
   - Le site doit tenir sur une page avec un menu qui reste visible, en haut de la page, même lorsque l'on se déplace dans la page ;
