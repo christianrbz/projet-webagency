@@ -7,8 +7,7 @@ Le projet devait aussi respecter ces consignes :
 Le site devra être réalisé en HTML et CSS (sans framework tel que Bootstrap).
 
 Les compétences évaluées pour valider ce projet sont : 
-- Coder la présentation d'une page web en CSS
 - Définir le contenu d'une page web à partir d'une maquette
-- Présenter une réalisation de manière professionnelle
+- Coder la structure d'une page web en HTML / CSS
 - Gérer la responsivité avec les Media Queries
-- Coder la structure d'une page web en HTML
+
