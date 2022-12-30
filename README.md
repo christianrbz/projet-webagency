@@ -1,4 +1,5 @@
-Intégration d’une maquette de site (une simple image) d'une agence web (projet d'Openclassrooms)
+Projet avec Openclassrooms
+Intégration d’une maquette de site (une simple image) d'une agence web 
 
 Lien du site : https://christianrbz.github.io/projet-webagency/
 
