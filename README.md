@@ -14,5 +14,4 @@ Les compétences évaluées pour valider ce projet sont :
 - Définir le contenu d'une page web à partir d'une maquette
 - Coder la structure d'une page web en HTML / CSS
 - Gérer la responsivité avec les Media Queries
-- Présenter une réalisation de manière professionnelle
 
